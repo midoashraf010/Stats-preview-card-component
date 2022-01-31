@@ -1,6 +1,7 @@
 .attribution {
   font-size: 12px;
   text-align: center;
+  padding: 1rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -16,13 +17,12 @@
 }
 body {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   background-color: var(--main-bg);
   color: var(--type-main);
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 :root {
@@ -34,27 +34,40 @@ body {
   --stat: hsla(0, 0%, 100%, 0.6);
 }
 .container {
-  width: 1440px;
+  width: 950px;
   background-color: var(--card-bg);
   display: flex;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .content {
   display: flex;
   flex-direction: column;
   width: 50%;
-  transform: translate(5rem, 4rem);
-  -webkit-transform: translate(5rem, 4rem);
-  -moz-transform: translate(5rem, 4rem);
-  -ms-transform: translate(5rem, 4rem);
-  -o-transform: translate(5rem, 4rem);
+  transform: translate(4rem, 4rem);
+  -webkit-transform: translate(4rem, 4rem);
+  -moz-transform: translate(4rem, 4rem);
+  -ms-transform: translate(4rem, 4rem);
+  -o-transform: translate(4rem, 4rem);
 }
 .content h1 .accent {
   color: var(--overlay);
 }
 .content .first-p {
   color: var(--type-p);
-  line-height: 2rem;
-  margin-bottom: 5rem;
+  line-height: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 2rem;
+}
+.content .header {
+  margin: 0;
+  font-weight: 700;
 }
 .content p {
   color: var(--stat);
@@ -64,13 +77,15 @@ body {
   text-transform: uppercase;
 }
 .content .pref h2 {
-  margin-bottom: 0;
+  margin: 0;
 }
 .content .pref p {
   margin-block-start: 0.5em;
+  font-weight: 400;
+  font-size: 12px;
 }
 .content .pref .pref-child {
-  margin-right: 5rem;
+  margin-right: 2.5rem;
 }
 .img {
   width: 50%;
